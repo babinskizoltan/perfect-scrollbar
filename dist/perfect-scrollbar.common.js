@@ -1,6 +1,6 @@
 /*!
- * perfect-scrollbar v1.5.3
- * Copyright 2021 Hyunje Jun, MDBootstrap and Contributors
+ * perfect-scrollbar v1.5.5
+ * Copyright 2022 Hyunje Jun, MDBootstrap and Contributors
  * Licensed under MIT
  */
 
@@ -824,8 +824,8 @@ function wheel(i) {
         var maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
         if (maxScrollTop > 0) {
           if (
-            (cursor.scrollTop > 0 && deltaY < 0) ||
-            (cursor.scrollTop < maxScrollTop && deltaY > 0)
+            (cursor.scrollTop > 0 && deltaY > 0) ||
+            (cursor.scrollTop < maxScrollTop && deltaY < 0)
           ) {
             return true;
           }
@@ -1012,8 +1012,8 @@ function touch(i) {
         var maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
         if (maxScrollTop > 0) {
           if (
-            (cursor.scrollTop > 0 && deltaY < 0) ||
-            (cursor.scrollTop < maxScrollTop && deltaY > 0)
+            (cursor.scrollTop > 0 && deltaY > 0) ||
+            (cursor.scrollTop < maxScrollTop && deltaY < 0)
           ) {
             return true;
           }

@@ -114,8 +114,8 @@ export default function(i) {
         const maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
         if (maxScrollTop > 0) {
           if (
-            (cursor.scrollTop > 0 && deltaY < 0) ||
-            (cursor.scrollTop < maxScrollTop && deltaY > 0)
+            (cursor.scrollTop > 0 && deltaY > 0) ||
+            (cursor.scrollTop < maxScrollTop && deltaY < 0)
           ) {
             return true;
           }
